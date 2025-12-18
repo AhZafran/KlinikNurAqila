@@ -263,6 +263,39 @@ export const PANELS = [
   },
 ] as const;
 
+export const TEAM_MEMBERS = [
+  {
+    id: "team-1",
+    name: "Dr. Nama Pertama",
+    role: "Doktor",
+    image: "/images/team/member-1.png",
+  },
+  {
+    id: "team-2",
+    name: "Nama Kedua",
+    role: "Jururawat",
+    image: "/images/team/member-2.png",
+  },
+  {
+    id: "team-3",
+    name: "Nama Ketiga",
+    role: "Jururawat",
+    image: "/images/team/member-3.png",
+  },
+  {
+    id: "team-4",
+    name: "Nama Keempat",
+    role: "Pembantu Klinik",
+    image: "/images/team/member-4.png",
+  },
+  {
+    id: "team-5",
+    name: "Nama Kelima",
+    role: "Pembantu Klinik",
+    image: "/images/team/member-5.png",
+  },
+] as const;
+
 export const TESTIMONIALS = [
   {
     id: "testimonial-1",

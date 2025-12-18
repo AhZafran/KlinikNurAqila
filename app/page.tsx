@@ -3,6 +3,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { WhyChooseUsSection } from "@/components/sections/WhyChooseUsSection";
 import { PanelSection } from "@/components/sections/PanelSection";
+import { TeamSection } from "@/components/sections/TeamSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <ServicesSection />
       <WhyChooseUsSection />
       <PanelSection />
+      <TeamSection />
       <TestimonialsSection />
     </main>
   );
