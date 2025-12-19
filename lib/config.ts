@@ -7,7 +7,7 @@ export const BRAND_CONFIG = {
 
 export const CLINIC_INFO = {
   address: "No 3B, Rumah Kedai Mara, Jalan Besar, Kampung Datuk Harun, 48200 Serendah, Selangor",
-  phone: "03-6081 4404",
+  phone: ["03-6081 4404", "01111057665"],
   operatingHours: "Setiap hari 9 pagi – 9 malam (Sabtu tutup)",
   whatsappNumber: "60XXXXXXXXX", // Fallback if short link is not used
   whatsappLink: "https://wa.link/3nj5xn",
@@ -266,9 +266,11 @@ export const PANELS = [
 export const TEAM_MEMBERS = [
   {
     id: "team-1",
-    name: "Dr. Nama Pertama",
+    name: "Dr. Norsyakirah Binti Hasbullah",
     role: "Doktor",
+    qualifications: "MBBS Manipal Academy of Higher Education (MAHE)",
     image: "/images/team/member-1.png",
+    featured: true,
   },
   {
     id: "team-2",

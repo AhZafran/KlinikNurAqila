@@ -8,7 +8,7 @@ export function StructuredData() {
     image: `${process.env.NEXT_PUBLIC_SITE_URL || ""}${BRAND_CONFIG.logo}`,
     "@id": process.env.NEXT_PUBLIC_SITE_URL || "",
     url: process.env.NEXT_PUBLIC_SITE_URL || "",
-    telephone: CLINIC_INFO.phone,
+    telephone: CLINIC_INFO.phone[0],
     address: {
       "@type": "PostalAddress",
       streetAddress: "No 3B, Rumah Kedai Mara, Jalan Besar, Kampung Datuk Harun",

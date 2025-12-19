@@ -46,12 +46,17 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-primary" />
-                <a
-                  href={`tel:${CLINIC_INFO.phone}`}
-                  className="hover:text-gray-900"
-                >
-                  {CLINIC_INFO.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  {CLINIC_INFO.phone.map((number, index) => (
+                    <a
+                      key={index}
+                      href={`tel:${number}`}
+                      className="hover:text-gray-900"
+                    >
+                      {number}
+                    </a>
+                  ))}
+                </div>
               </li>
               <li className="flex gap-3">
                 <Clock className="h-5 w-5 shrink-0 text-primary" />

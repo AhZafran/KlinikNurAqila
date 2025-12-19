@@ -48,12 +48,17 @@ export function ContactSection() {
                 <h3 className="mb-2 text-lg font-semibold text-gray-900">
                   Telefon
                 </h3>
-                <a
-                  href={`tel:${CLINIC_INFO.phone}`}
-                  className="text-gray-600 hover:text-primary"
-                >
-                  {CLINIC_INFO.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  {CLINIC_INFO.phone.map((number, index) => (
+                    <a
+                      key={index}
+                      href={`tel:${number}`}
+                      className="text-gray-600 hover:text-primary"
+                    >
+                      {number}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
 
